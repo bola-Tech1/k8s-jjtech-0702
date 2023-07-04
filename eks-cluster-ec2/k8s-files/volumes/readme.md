@@ -6,7 +6,7 @@
 - Ensure your eks cluster is up and running
 - Go to the AWS Management Console and navigate to the Amazon EFS service.
 Click on "Create file system" and configure the settings for your EFS file system, such as the **name** and the **vpc** in which your cluster is configred. Note down the File System ID (e.g., fs-12345678), as you will need it later.
-Create a Mount Targets:
+Create a Mount Targets: update the security group: jjtech-cluster-efs --> Network --> Manage --> update your security to jjtech-cluster-sg.
 
 
 ### Set up EFS Provisioner and RBAC Roles:
