@@ -31,7 +31,7 @@ kubectl config rename-context <old-context-name> <new-context-name> # Rename con
 
 - update profile on cli by running the commands below:
   - aws configure --profile <profile-name> # Provide credentials for new user created above
-  - export AWS_PROFILE=<name of profile> # to set profile to a current profile
+  - export AWS_PROFILE=<name of profile> # to set profile to a current profile #Go to credentials for this user and generate Access Key and Secret key ID
   - aws sts get-caller-identity # Run command to confirm current profile
 
 - kubectl describe -n kube-system configmap/aws-auth # Get details about aws_auth config for your cluster
